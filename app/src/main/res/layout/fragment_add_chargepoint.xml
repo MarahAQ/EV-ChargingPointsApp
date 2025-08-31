@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    android:padding="16dp">
+
+    <!-- Reference ID Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_reference_id_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:boxBackgroundColor="#1F1F1F"
+        app:boxStrokeColor="#FFFFFF"
+        app:hintTextColor="@color/gray"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_reference_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Reference ID"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#B3B3B3"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Town Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_town_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:boxBackgroundColor="#1F1F1F"
+        app:boxStrokeColor="#FFFFFF"
+        app:hintTextColor="@color/gray"
+        app:layout_constraintTop_toBottomOf="@id/input_reference_id_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_town"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Town"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#B3B3B3"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Postcode Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_postcode_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:boxBackgroundColor="#1F1F1F"
+        app:boxStrokeColor="#FFFFFF"
+        app:hintTextColor="@color/gray"
+        app:layout_constraintTop_toBottomOf="@id/input_town_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_postcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Postcode"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#B3B3B3"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Add Chargepoint Button -->
+    <Button
+        android:id="@+id/button_add_chargepoint"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:text="Add Chargepoint"
+        android:textAllCaps="false"
+        android:background="@drawable/gradient_button"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/input_postcode_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background Layer -->
+    <item>
+        <shape android:shape="rectangle">
+            <!-- Gradient for the button -->
+            <gradient
+                android:startColor="#FF6D6D"
+                android:endColor="#FF4B6D"
+                android:angle="90" />
+            <!-- Rounded corners -->
+            <corners android:radius="16dp" />
+        </shape>
+    </item>
+
+    <!-- Optional Border Layer -->
+    <item android:left="2dp" android:right="2dp" android:top="2dp" android:bottom="2dp">
+        <shape android:shape="rectangle">
+            <!-- Solid border color -->
+            <solid android:color="#FF000000" />
+            <!-- Rounded corners to match the background -->
+            <corners android:radius="16dp" />
+        </shape>
+    </item>
+</layer-list>

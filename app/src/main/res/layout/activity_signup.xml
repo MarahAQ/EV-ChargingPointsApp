@@ -1,0 +1,110 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212">
+
+    <!-- Email Input Field -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/registeremail_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="32dp"
+        app:boxBackgroundColor="#1F1F1F"
+        app:boxStrokeColor="#FFFFFF"
+        app:hintTextColor="@color/gray"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/registeremail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Email"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#B3B3B3"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Password Input Field -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/registerpassword_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="16dp"
+        app:boxBackgroundColor="#1F1F1F"
+        app:boxStrokeColor="#FFFFFF"
+        app:hintTextColor="@color/gray"
+        app:layout_constraintTop_toBottomOf="@id/registeremail_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/registerpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Password"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#B3B3B3"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Confirm Password Input Field -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/registerrepassword_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="16dp"
+        app:boxBackgroundColor="#1F1F1F"
+        app:boxStrokeColor="#FFFFFF"
+        app:hintTextColor="@color/gray"
+        app:layout_constraintTop_toBottomOf="@id/registerpassword_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/registerrepassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#B3B3B3"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Sign Up Button -->
+    <Button
+        android:id="@+id/registerbutsignup"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:background="@drawable/gradient_button"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintTop_toBottomOf="@id/registerrepassword_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/registerbutback"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:text="Back"
+        android:textAllCaps="false"
+        android:background="@drawable/gradient_button"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintTop_toBottomOf="@id/registerbutsignup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
