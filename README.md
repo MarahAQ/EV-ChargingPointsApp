@@ -28,3 +28,5 @@ This  app is allow users to  log in, choose a city, view charging points on a Go
 	•	Real-time charger availability
 	•	Expand beyond Yorkshire
 
+ Check documentation PDF File for more details ....
+
